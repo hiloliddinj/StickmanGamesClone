@@ -22,7 +22,7 @@ public class Defender : MonoBehaviour
         {
             animator.SetBool(AnimeConst.isWalking, true);
             transform.LookAt(target.transform.position);
-            transform.position = Vector3.Lerp(transform.position, target.transform.position, .0001f);
+            transform.position = Vector3.Lerp(transform.position, target.transform.position, .001f);
             Debug.Log("Defender, Player came !!!");
         }
     }

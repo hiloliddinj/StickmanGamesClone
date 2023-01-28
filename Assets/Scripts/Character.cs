@@ -5,6 +5,11 @@ public class Character : MonoBehaviour
     public float speed;
     public GameManager gameManager;
 
+    private void Start()
+    {
+        gameManager = GameObject.FindWithTag(TagConst.gameManager).GetComponent<GameManager>();
+    }
+
     private void Update()
     {
         if(Input.GetKey(KeyCode.Mouse0))
@@ -67,6 +72,7 @@ public class Character : MonoBehaviour
         {
             gameManager.DefenderStartWalk();
             speed = 1.5f;
+            gameManager.isGameFinished = true;
         }
 
     }

@@ -11,4 +11,5 @@ public class TagConst
     public const string wall = "Wall";
     public const string endWall = "EndWall";
     public const string bonusWall = "BonusWall";
+    public const string camera = "MainCamera";
 }

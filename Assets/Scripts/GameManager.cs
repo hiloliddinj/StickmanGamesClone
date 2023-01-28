@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public int realTimeEnemyCount = 0;
     public GameObject player;
     public GameObject defender;
+    public bool isGameFinished = false;
 
     public List<GameObject> playerList;
     public List<GameObject> wall1Enemies;
