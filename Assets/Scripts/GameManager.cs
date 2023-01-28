@@ -7,13 +7,17 @@ public class GameManager : MonoBehaviour
 
     public GameObject targetPoint;
     public int realTimePlayerCount = 1;
-    public List<GameObject> playerList;
+    public int realTimeEnemyCount = 0;
+    public GameObject player;
 
+    public List<GameObject> playerList;
+    public List<GameObject> wall1Enemies;
+    public List<GameObject> wall2Enemies;
 
 
     void Start()
     {
-        
+        player = GameObject.FindWithTag(TagConst.player);
     }
 
     
@@ -32,6 +36,23 @@ public class GameManager : MonoBehaviour
         //        }
         //    }
         //}
+    }
+
+    private void FixedUpdate()
+    {
+        if (realTimeEnemyCount > realTimePlayerCount)
+        {
+            player.SetActive(false);
+            //foreach (var subPlayer in gameManager.playerList)
+            //{
+            //    if (subPlayer.activeInHierarchy)
+            //    {
+            //        subPlayer.SetActive(false);
+            //    }
+            //}
+
+            Debug.Log("YOU LOOSE !!!!!");
+        }
     }
 
     public void SubCharacterManagement(string operationType, int amount, Transform transform)

@@ -23,7 +23,7 @@ public class SubPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(TagConst.obstacle))
+        if (other.CompareTag(TagConst.obstacle) || other.CompareTag(TagConst.enemy))
         {
             Debug.Log("SubLpayer, Player Died");
             gameManager.realTimePlayerCount--;

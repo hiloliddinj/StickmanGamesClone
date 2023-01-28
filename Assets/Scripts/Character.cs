@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    public float speed;
     public GameManager gameManager;
 
     private void Update()
@@ -36,5 +34,34 @@ public class Character : MonoBehaviour
             gameManager.SubCharacterManagement(other.tag, amount, other.transform);
             Debug.Log("Carpti: " + other.name);
         }
+
+        if (other.CompareTag(TagConst.wall))
+        {
+            speed = .7f;
+            if (other.name == "1")
+            {
+                Debug.Log("Character, Wall 1");
+                gameManager.realTimeEnemyCount = gameManager.wall1Enemies.Count;
+                foreach (var enemy in gameManager.wall1Enemies)
+                {
+                    enemy.GetComponent<Enemy>().isPlayersNear = true;
+                }
+
+            } else if (other.name == "2")
+            {
+                gameManager.realTimeEnemyCount = gameManager.wall2Enemies.Count;
+                Debug.Log("Character, Wall 2");
+                foreach (var enemy in gameManager.wall2Enemies)
+                {
+                    enemy.GetComponent<Enemy>().isPlayersNear = true;
+                }
+            }
+        }
+
+        if (other.CompareTag(TagConst.endWall))
+        {
+            speed = 2f;
+        }
+
     }
 }

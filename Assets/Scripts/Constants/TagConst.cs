@@ -7,4 +7,6 @@ public class TagConst
     public const string gameManager = "GameManager";
     public const string multiplication = "Multiplication";
     public const string addition = "Addition";
+    public const string wall = "Wall";
+    public const string endWall = "EndWall";
 }
