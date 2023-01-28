@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public GameObject defender;
     public bool isGameFinished = false;
+    public bool isDefenderDead = false;
 
     public List<GameObject> playerList;
     public List<GameObject> wall1Enemies;

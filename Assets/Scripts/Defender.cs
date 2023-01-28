@@ -43,6 +43,7 @@ public class Defender : MonoBehaviour
         {
             animator.SetBool(AnimeConst.isDiying, true);
             gameManager.player.GetComponent<Animator>().SetBool(AnimeConst.isRunning, false);
+            gameManager.isDefenderDead = true;
             
         } 
     }
