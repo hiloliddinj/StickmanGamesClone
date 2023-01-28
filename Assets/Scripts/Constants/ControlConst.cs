@@ -1,5 +1,3 @@
-
-
 public class ControlConst
 {
     public const string horizontal = "Horizontal";
