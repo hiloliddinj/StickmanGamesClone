@@ -63,5 +63,11 @@ public class Character : MonoBehaviour
             speed = 2f;
         }
 
+        if (other.CompareTag(TagConst.bonusWall))
+        {
+            gameManager.DefenderStartWalk();
+            speed = 1.5f;
+        }
+
     }
 }

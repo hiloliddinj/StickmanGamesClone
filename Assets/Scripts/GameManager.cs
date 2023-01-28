@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +8,7 @@ public class GameManager : MonoBehaviour
     public int realTimePlayerCount = 1;
     public int realTimeEnemyCount = 0;
     public GameObject player;
+    public GameObject defender;
 
     public List<GameObject> playerList;
     public List<GameObject> wall1Enemies;
@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag(TagConst.player);
+        defender = GameObject.FindWithTag(TagConst.defender);
     }
 
     
@@ -111,5 +112,10 @@ public class GameManager : MonoBehaviour
                 realTimePlayerCount *= amount;
                 break;
         }
+    }
+
+    public void DefenderStartWalk()
+    {
+        defender.GetComponent<Defender>().didComePlayers = true;
     }
 }

@@ -12,6 +12,8 @@ TagManager:
   - Multiplication
   - Wall
   - EndWall
+  - BonusWall
+  - Defender
   layers:
   - Default
   - TransparentFX
