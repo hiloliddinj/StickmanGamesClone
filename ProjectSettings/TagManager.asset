@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - SubPlayer
   - GameManager
+  - Addition
+  - Multiplication
   layers:
   - Default
   - TransparentFX

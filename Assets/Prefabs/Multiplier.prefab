@@ -45,7 +45,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7420524702839559440, guid: 62b2d4d8ea3d144409c307052886c771, type: 3}
       propertyPath: m_Name
-      value: WindowLeft
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7420524702839559440, guid: 62b2d4d8ea3d144409c307052886c771, type: 3}
+      propertyPath: m_TagString
+      value: Multiplication
+      objectReference: {fileID: 0}
+    - target: {fileID: 7420524702839559442, guid: 62b2d4d8ea3d144409c307052886c771, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7420524702839559443, guid: 62b2d4d8ea3d144409c307052886c771, type: 3}
       propertyPath: m_RootOrder
@@ -97,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7807227146194772481, guid: 62b2d4d8ea3d144409c307052886c771, type: 3}
       propertyPath: m_text
-      value: +15
+      value: X15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62b2d4d8ea3d144409c307052886c771, type: 3}
@@ -355,7 +363,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7420524702839559440, guid: 62b2d4d8ea3d144409c307052886c771, type: 3}
       propertyPath: m_Name
-      value: WindowRight
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7420524702839559440, guid: 62b2d4d8ea3d144409c307052886c771, type: 3}
+      propertyPath: m_TagString
+      value: Addition
+      objectReference: {fileID: 0}
+    - target: {fileID: 7420524702839559442, guid: 62b2d4d8ea3d144409c307052886c771, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7420524702839559443, guid: 62b2d4d8ea3d144409c307052886c771, type: 3}
       propertyPath: m_RootOrder
